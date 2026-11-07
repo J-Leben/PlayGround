@@ -16,3 +16,7 @@
 - 👤 [Explore the creator's projects](https://go.ondev.store/J-Leben).
 - 🌍 [Create with OMGithub](https://go.ondev.store/).
 <!-- omgithub:readme:end -->
+
+## Full Court
+
+A browser basketball shooting career game. Open `index.html` in a browser (or serve this folder with any static web server). Drag from the ball toward the hoop to set angle and power, then release. Make 3 of 5 shots to advance, earn XP and coins, build a streak, and unlock new ball styles. Progress is saved in your browser.

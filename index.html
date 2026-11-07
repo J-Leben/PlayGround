@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="theme-color" content="#101510">
+<title>FULL COURT — Hoops Career</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700;800&display=swap');
+:root{--ink:#f4f3e8;--muted:#a1a797;--lime:#d2f36b;--orange:#ff8148;--panel:#1a2019;--line:#333c30}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:#101510;color:var(--ink);font-family:'DM Sans',sans-serif}body{min-height:100vh;background:radial-gradient(ellipse at 48% -15%,#283525 0%,#141a14 48%,#101510 78%);padding:20px 24px 24px;overflow-x:hidden}.app{max-width:1280px;margin:0 auto}.topbar{height:60px;display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}.brand{display:flex;align-items:center;gap:12px}.brand-mark{height:42px;width:42px;border-radius:13px;background:var(--lime);display:grid;place-items:center;color:#182016;font-size:23px;box-shadow:0 6px 24px #d2f36b26}.brand-name{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:25px;letter-spacing:1.3px}.brand-name span{color:var(--lime)}.tagline{font-size:10px;letter-spacing:2px;color:var(--muted);margin-top:1px;font-weight:700}.top-right{display:flex;align-items:center;gap:10px}.top-chip{display:flex;align-items:center;gap:8px;background:#1a2019;border:1px solid var(--line);border-radius:11px;padding:9px 13px;font-size:12px;font-weight:700}.chip-icon{font-size:15px}.chip-value{color:var(--lime);font-weight:800}.icon-btn{width:39px;height:39px;background:#1a2019;border:1px solid var(--line);border-radius:11px;color:var(--ink);cursor:pointer;font-size:16px}.icon-btn:hover,.top-chip:hover{border-color:#74845d}.main-grid{display:grid;grid-template-columns:minmax(0,1fr) 276px;gap:16px;align-items:stretch}.game-column{min-width:0}.game-card{background:#181d17;border:1px solid #394233;border-radius:17px;overflow:hidden;box-shadow:0 22px 65px #0005}.game-head{height:65px;background:#1d241b;display:flex;align-items:center;justify-content:space-between;padding:0 20px;border-bottom:1px solid #313a2d}.round-label{display:flex;align-items:center;gap:12px}.round-icon{width:36px;height:36px;border-radius:11px;background:#2c3628;display:grid;place-items:center;font-size:19px}.eyebrow{font-size:9px;letter-spacing:1.7px;color:var(--muted);font-weight:800}.round-name{font-family:'Barlow Condensed',sans-serif;font-size:20px;font-weight:800;letter-spacing:.5px;margin-top:1px}.scoreboard{display:flex;align-items:center;gap:18px}.score-block{text-align:right}.score-main{font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:800}.score-main span{color:var(--muted);font-size:14px}.score-small{font-size:9px;color:var(--muted);letter-spacing:1px;font-weight:700}.target-pill{background:#293421;border:1px solid #465736;border-radius:9px;padding:8px 11px;color:var(--lime);font-size:10px;font-weight:800;letter-spacing:.6px;white-space:nowrap}.canvas-wrap{position:relative;background:#141a14;line-height:0;touch-action:none}.canvas-wrap canvas{display:block;width:100%;height:auto;touch-action:none;cursor:crosshair}.canvas-hint{position:absolute;left:15px;bottom:13px;background:#131911d9;border:1px solid #556147;border-radius:10px;padding:8px 11px;font-size:10px;line-height:1.4;color:#dce1ce;pointer-events:none;transition:opacity .3s}.canvas-hint b{color:var(--lime)}.hint-key{display:inline-grid;place-items:center;min-width:19px;height:18px;padding:0 4px;background:#30382c;border:1px solid #556047;border-radius:4px;color:#e8eddc;font-size:9px;font-weight:800;margin-right:3px}.game-foot{height:67px;padding:0 19px;display:flex;align-items:center;justify-content:space-between;background:#1b211a;border-top:1px solid #313a2d}.shots{display:flex;align-items:center;gap:12px}.shots-label{font-size:9px;color:var(--muted);font-weight:800;letter-spacing:1.1px}.shot-dots{display:flex;gap:6px}.shot-dot{width:26px;height:26px;border-radius:8px;border:1px solid #485043;background:#252c23;color:#899182;display:grid;place-items:center;font-size:12px;font-weight:800}.shot-dot.made{background:#d2f36b;color:#1b2415;border-color:#d2f36b}.shot-dot.missed{background:#422c25;color:#ff9162;border-color:#744633}.shot-dot.current{border-color:#d2f36b;box-shadow:0 0 0 2px #d2f36b22}.foot-status{color:var(--muted);font-size:11px}.foot-status strong{color:var(--ink)}.sidebar{display:flex;flex-direction:column;gap:13px}.side-card{background:#1a2019;border:1px solid var(--line);border-radius:15px;padding:17px}.side-title{font-size:9px;letter-spacing:1.7px;color:var(--muted);font-weight:800}.level-row{display:flex;justify-content:space-between;align-items:end;margin:11px 0 9px}.level-number{font-family:'Barlow Condensed',sans-serif;font-size:42px;line-height:.9;font-weight:900;color:var(--lime)}.level-caption{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:18px;line-height:1.1}.level-caption small{display:block;font:700 9px 'DM Sans';letter-spacing:1px;color:var(--muted);margin-bottom:4px}.xp-track{height:6px;border-radius:9px;background:#343c31;overflow:hidden}.xp-fill{height:100%;width:0;background:linear-gradient(90deg,#9ac83e,#ddf77b);border-radius:9px;transition:width .5s}.xp-meta{display:flex;justify-content:space-between;font-size:9px;color:var(--muted);font-weight:700;margin-top:7px}.progress-steps{display:flex;gap:4px;margin-top:15px}.progress-step{height:5px;border-radius:3px;background:#353d32;flex:1}.progress-step.done{background:var(--lime)}.progress-step.active{background:#849c55}.challenge-row{display:flex;align-items:center;justify-content:space-between;margin-top:12px}.challenge-text{font-size:12px;font-weight:700}.challenge-sub{font-size:10px;color:var(--muted);margin-top:4px}.mini-badge{border-radius:8px;background:#2b3526;padding:7px 9px;color:var(--lime);font-size:10px;font-weight:800}.streak-line{display:flex;align-items:center;gap:9px;margin-top:14px}.streak-fire{font-size:22px}.streak-number{font-family:'Barlow Condensed',sans-serif;font-size:24px;font-weight:800}.streak-caption{font-size:9px;color:var(--muted);letter-spacing:.9px;font-weight:700}.streak-best{margin-left:auto;text-align:right;font-size:10px;color:var(--muted)}.streak-best b{color:#f4f3e8}.reward-head{display:flex;justify-content:space-between;align-items:center}.reward-coins{font-size:11px;color:var(--lime);font-weight:800}.reward-item{display:flex;gap:11px;align-items:center;margin-top:14px}.ball-thumb{height:43px;width:43px;border-radius:12px;background:#2b3427;display:grid;place-items:center;font-size:24px}.reward-info{flex:1}.reward-name{font-size:11px;font-weight:800}.reward-desc{font-size:9px;color:var(--muted);margin-top:3px}.reward-lock{font-size:10px;font-weight:800;color:#b1b8a7}.reward-lock.ready{color:var(--lime)}.reward-progress{height:4px;background:#353d32;border-radius:3px;margin-top:8px;overflow:hidden}.reward-progress i{height:100%;display:block;background:var(--orange);border-radius:4px}.side-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:auto}.action-btn{background:#222a20;border:1px solid #3b4636;border-radius:10px;color:var(--ink);font:700 10px 'DM Sans';padding:11px 8px;cursor:pointer}.action-btn:hover{border-color:#84945f;background:#293326}.action-btn.primary{background:var(--lime);color:#182016;border-color:var(--lime)}.action-btn.primary:hover{background:#e2ff88}.toast{position:fixed;z-index:5;left:50%;top:24px;transform:translate(-50%,-20px);opacity:0;background:#d2f36b;color:#1b2415;border-radius:12px;padding:12px 18px;font-size:13px;font-weight:800;box-shadow:0 12px 30px #0005;transition:.3s;pointer-events:none}.toast.show{transform:translate(-50%,0);opacity:1}.modal-backdrop{position:fixed;inset:0;background:#080b08c9;z-index:10;display:none;place-items:center;padding:20px}.modal-backdrop.open{display:grid}.modal{width:min(440px,100%);background:#1b2219;border:1px solid #4a5740;border-radius:20px;padding:27px;box-shadow:0 25px 80px #0008}.modal h2{font:900 32px 'Barlow Condensed';margin:0 0 7px}.modal p{color:#b4bcaa;font-size:12px;line-height:1.7;margin:8px 0 18px}.modal-close{float:right;border:0;background:transparent;color:#aab39f;font-size:22px;cursor:pointer}.modal-row{padding:10px 0;border-top:1px solid #343d30;font-size:11px;color:#c5ccba}.modal-row b{color:var(--lime)}
+@media(max-width:900px){body{padding:12px}.main-grid{grid-template-columns:minmax(0,1fr) 230px;gap:10px}.side-card{padding:14px}.game-head{padding:0 13px}.game-foot{padding:0 13px}.tagline{display:none}}
+@media(max-width:680px){body{padding:8px 8px 18px}.topbar{height:48px;margin-bottom:9px}.brand-mark{height:35px;width:35px;border-radius:10px;font-size:19px}.brand-name{font-size:22px}.top-right{gap:5px}.top-chip{padding:7px 9px;font-size:10px}.icon-btn{width:35px;height:35px}.main-grid{grid-template-columns:1fr;gap:9px}.game-head{height:56px}.round-icon{height:31px;width:31px}.round-name{font-size:17px}.target-pill{padding:7px 8px;font-size:9px}.scoreboard{gap:10px}.score-main{font-size:18px}.score-small{font-size:8px}.game-foot{height:57px;padding:0 10px}.shot-dot{height:22px;width:22px;border-radius:6px;font-size:10px}.shots{gap:7px}.shots-label{font-size:8px}.foot-status{font-size:9px}.sidebar{display:grid;grid-template-columns:1fr 1fr;gap:8px}.side-card{padding:12px}.level-number{font-size:34px}.level-caption{font-size:15px}.progress-steps{margin-top:11px}.challenge-row{margin-top:9px}.streak-line{margin-top:10px}.reward-item{margin-top:10px}.ball-thumb{height:36px;width:36px;font-size:20px}.reward-name{font-size:10px}.reward-desc{font-size:8px}.side-actions{grid-column:1/-1;grid-template-columns:1fr 1fr;gap:8px;margin-top:0}.action-btn{padding:10px}.canvas-hint{font-size:9px;left:8px;bottom:7px;padding:6px 8px}.canvas-hint .hint-key{height:16px;min-width:16px;font-size:8px}}
+@media(max-width:390px){.top-chip{gap:5px;padding:6px 7px}.top-chip .chip-icon{font-size:12px}.brand-name{font-size:20px}.scoreboard{gap:7px}.round-label{gap:7px}.target-pill{font-size:8px}.foot-status{max-width:90px;text-align:right}}
+</style>
+</head>
+<body>
+<div class="app">
+  <header class="topbar">
+    <div class="brand"><div class="brand-mark">🏀</div><div><div class="brand-name">FULL <span>COURT</span></div><div class="tagline">YOUR HOOPS CAREER STARTS HERE</div></div></div>
+    <div class="top-right"><div class="top-chip"><span class="chip-icon">🪙</span><span class="chip-value" id="coinTop">0</span><span>COINS</span></div><button class="icon-btn" id="soundBtn" aria-label="Toggle sound">◖))</button></div>
+  </header>
+  <main class="main-grid">
+    <section class="game-column">
+      <div class="game-card">
+        <div class="game-head">
+          <div class="round-label"><div class="round-icon">🏆</div><div><div class="eyebrow">CAREER CHALLENGE</div><div class="round-name" id="roundName">ROOKIE RUN</div></div></div>
+          <div class="scoreboard"><div class="score-block"><div class="score-main"><b id="roundMakes">0</b><span> / 3</span></div><div class="score-small">MADE</div></div><div class="target-pill" id="targetPill">🎯 3 TO ADVANCE</div></div>
+        </div>
+        <div class="canvas-wrap"><canvas id="game" width="1000" height="560" aria-label="Basketball shooting court"></canvas><div class="canvas-hint" id="hint"><span class="hint-key">DRAG</span> from the ball to aim, then release to shoot<br><span class="hint-key">SPACE</span> shoots · <span class="hint-key">← →</span> adjusts aim</div></div>
+        <div class="game-foot"><div class="shots"><span class="shots-label">YOUR SHOTS</span><div class="shot-dots" id="shotDots"></div></div><div class="foot-status" id="footStatus">Drag from the ball to line up your shot.</div></div>
+      </div>
+    </section>
+    <aside class="sidebar">
+      <section class="side-card"><div class="side-title">PLAYER PROGRESSION</div><div class="level-row"><div class="level-number" id="levelNumber">01</div><div class="level-caption"><small>CAREER LEVEL</small><span id="levelTitle">Rookie</span></div></div><div class="xp-track"><div class="xp-fill" id="xpFill"></div></div><div class="xp-meta"><span id="xpText">0 XP</span><span id="xpNext">100 XP</span></div><div class="progress-steps" id="progressSteps"></div></section>
+      <section class="side-card"><div class="side-title">ROUND OBJECTIVE</div><div class="challenge-row"><div><div class="challenge-text" id="objective">Sink 3 of 5 shots</div><div class="challenge-sub" id="objectiveSub">Make it count. Every basket earns XP.</div></div><div class="mini-badge" id="roundNum">ROUND 01</div></div><div class="streak-line"><div class="streak-fire">🔥</div><div><div class="streak-number" id="streakNum">0</div><div class="streak-caption">HOT STREAK</div></div><div class="streak-best">BEST<br><b id="bestStreak">0</b></div></div><button class="action-btn primary" id="advanceBtn" style="width:100%;margin-top:13px;display:none">CONTINUE →</button></section>
+      <section class="side-card"><div class="reward-head"><div class="side-title">NEXT REWARD</div><div class="reward-coins">+25 🪙 / round</div></div><div class="reward-item"><div class="ball-thumb" id="rewardBall">🏀</div><div class="reward-info"><div class="reward-name" id="rewardName">Street Legend</div><div class="reward-desc" id="rewardDesc">Unlock at career level 3</div><div class="reward-progress"><i id="rewardProgress" style="width:0%"></i></div></div><div class="reward-lock" id="rewardLock">🔒</div></div></section>
+      <div class="side-actions"><button class="action-btn" id="howBtn">ⓘ &nbsp;HOW TO PLAY</button><button class="action-btn primary" id="resetBtn">↻ &nbsp;NEW CAREER</button></div>
+    </aside>
+  </main>
+</div>
+<div class="toast" id="toast"></div>
+<div class="modal-backdrop" id="modal"><div class="modal"><button class="modal-close" id="modalClose">×</button><h2 id="modalTitle">HOW TO PLAY</h2><p id="modalText">Drag from the basketball toward where you want to send it. Drag farther for more power, then release. Read the dotted flight guide, find the arc, and sink at least 3 out of 5 to level up.</p><div class="modal-row"><b>Desktop</b> — drag with your mouse, or use ← → and Space.</div><div class="modal-row"><b>Mobile</b> — drag your finger from the ball toward the hoop.</div><div class="modal-row"><b>Progression</b> — earn XP and coins for makes. Advance through rounds to unlock new basketballs.</div></div></div>
+<script>
+(() => {
+'use strict';
+const canvas=document.getElementById('game'),ctx=canvas.getContext('2d');
+const $=id=>document.getElementById(id);
+const W=1000,H=560,FLOOR=500,GRAVITY=.18,HOOP={x:794,y:218};
+const skins=[{name:'Classic Orange',emoji:'🏀',at:1,color:'#f47b35'},{name:'Street Legend',emoji:'🏀',at:3,color:'#ff5d43'},{name:'Neon Volt',emoji:'🟡',at:5,color:'#d8fa58'},{name:'Deep Space',emoji:'🟣',at:8,color:'#9e76ff'}];
+const titles=['Rookie','Sixth Player','Starter','All-Star','MVP','Franchise','Hall of Fame','Legend'];
+const load=()=>{try{return JSON.parse(localStorage.getItem('fullCourtSave'))||{}}catch{return {}}};
+const saved=load();
+const state={career:Math.max(1,saved.career||1),xp:saved.xp||0,coins:saved.coins||0,totalMakes:saved.totalMakes||0,totalShots:saved.totalShots||0,bestStreak:saved.bestStreak||0,streak:saved.streak||0,skin:saved.skin||0,round:Math.max(1,saved.round||1),makes:0,attempts:0,results:[],balls:[],particles:[],aim:null,launchX:260,launchY:478,shotTimer:0,roundDone:false,roundWon:false,toastTimer:0,sound:true,muted:false};
+let audio=null,lastFrame=0;
+function save(){try{localStorage.setItem('fullCourtSave',JSON.stringify({career:state.career,round:state.round,xp:state.xp,coins:state.coins,totalMakes:state.totalMakes,totalShots:state.totalShots,bestStreak:state.bestStreak,streak:state.streak,skin:state.skin}))}catch{}}
+function level(){return Math.floor(state.xp/100)+1}
+function levelXP(){return state.xp%100}
+function showToast(text){const e=$('toast');e.textContent=text;e.classList.add('show');clearTimeout(state.toastTimer);state.toastTimer=setTimeout(()=>e.classList.remove('show'),2100)}
+function beep(freq=520,dur=.1,type='sine'){if(!state.sound||state.muted)return;try{audio=audio||new(window.AudioContext||window.webkitAudioContext)();const o=audio.createOscillator(),g=audio.createGain();o.type=type;o.frequency.value=freq;g.gain.setValueAtTime(.08,audio.currentTime);g.gain.exponentialRampToValueAtTime(.001,audio.currentTime+dur);o.connect(g);g.connect(audio.destination);o.start();o.stop(audio.currentTime+dur)}catch{}}
+function updateUI(){
+ $('coinTop').textContent=state.coins;$('roundMakes').textContent=state.makes;$('roundNum').textContent=`ROUND ${String(state.round).padStart(2,'0')}`;
+ $('roundName').textContent=state.career===1?'ROOKIE RUN':state.career<4?'CITY LEAGUE':state.career<8?'PRO CIRCUIT':'LEGENDS TOUR';
+ $('levelNumber').textContent=String(level()).padStart(2,'0');$('levelTitle').textContent=titles[Math.min(titles.length-1,level()-1)];
+ $('xpFill').style.width=`${levelXP()}%`;$('xpText').textContent=`${levelXP()} XP`;$('xpNext').textContent='100 XP NEXT';
+ $('objective').textContent=state.roundDone?(state.roundWon?'Round cleared!':'Round not cleared'):'Sink 3 of 5 shots';
+ $('objectiveSub').textContent=state.roundDone?(state.roundWon?'Your next challenge is ready.':'You need 3 makes. Give it another go!'):'Make it count. Every basket earns XP.';
+ $('roundMakes').nextElementSibling.textContent=' / 3';$('targetPill').textContent=state.roundDone?(state.roundWon?'✓ ROUND CLEAR':'↻ TRY AGAIN'):'🎯 3 TO ADVANCE';
+ $('streakNum').textContent=state.streak;$('bestStreak').textContent=state.bestStreak;$('soundBtn').textContent=state.muted?'◖×)':'◖))';
+ const steps=$('progressSteps');steps.innerHTML='';for(let i=1;i<=8;i++){const s=document.createElement('i');s.className='progress-step'+(i<state.career?' done':i===state.career?' active':'');steps.appendChild(s)}
+ const next=skins.find(s=>level()<s.at)||skins[skins.length-1];$('rewardName').textContent=next.name;$('rewardBall').textContent=next.emoji;$('rewardDesc').textContent=level()>=next.at?'New ball unlocked!':`Unlock at career level ${next.at}`;$('rewardLock').textContent=level()>=next.at?'✓':'🔒';$('rewardLock').classList.toggle('ready',level()>=next.at);$('rewardProgress').style.width=`${Math.min(100,level()/next.at*100)}%`;
+ const dots=$('shotDots');dots.innerHTML='';for(let i=0;i<5;i++){const d=document.createElement('div');d.className='shot-dot'+(state.results[i]===true?' made':state.results[i]===false?' missed':i===state.attempts&&!state.roundDone?' current':'');d.textContent=state.results[i]===true?'✓':state.results[i]===false?'×':i+1;dots.appendChild(d)}
+ $('footStatus').innerHTML=state.roundDone?(state.roundWon?'<strong>Round won!</strong> Claim your next challenge.':'<strong>Not quite.</strong> Retry this round to advance.'):(state.aim?'Release to shoot!':'Drag from the ball to line up your shot.');
+}
+function currentSkin(){return skins[Math.min(state.skin,skins.length-1)]}
+function spawn(){state.balls=[];state.launchX=Math.max(210,260-Math.min(5,state.career-1)*23);state.launchY=478;state.aim=null}
+function roundReset(){state.attempts=0;state.makes=0;state.results=[];state.roundDone=false;state.roundWon=false;state.balls=[];state.streak=0;spawn();updateUI()}
+function rr(x,y,w,h,r,fill,stroke){ctx.beginPath();ctx.roundRect(x,y,w,h,r);if(fill){ctx.fillStyle=fill;ctx.fill()}if(stroke){ctx.strokeStyle=stroke;ctx.stroke()}}
+function drawCourt(){
+ const sky=ctx.createLinearGradient(0,0,0,360);sky.addColorStop(0,'#1c2921');sky.addColorStop(.7,'#263329');sky.addColorStop(1,'#394331');ctx.fillStyle=sky;ctx.fillRect(0,0,W,H);
+ // gym wall panels and high windows
+ ctx.fillStyle='#19241e';ctx.fillRect(0,0,W,110);
+ for(let i=0;i<7;i++){const x=35+i*145;rr(x,20,94,58,5,'#314137','#48564a');ctx.fillStyle='#a5d6bd';ctx.globalAlpha=.22;ctx.fillRect(x+5,25,84,48);ctx.globalAlpha=1;ctx.fillStyle='#526254';ctx.fillRect(x+45,23,3,52)}
+ // distant crowd / bleachers
+ ctx.fillStyle='#374337';ctx.fillRect(0,112,W,180);ctx.fillStyle='#263229';ctx.fillRect(0,112,W,9);
+ for(let row=0;row<3;row++){ctx.fillStyle=['#4b5845','#3b4839','#303d32'][row];ctx.fillRect(0,142+row*42,W,7);for(let i=0;i<48;i++){const x=i*23+(row%2)*11,y=126+row*42;ctx.fillStyle=['#d87651','#d7bb79','#718d73','#798ca1','#b07e72'][(i*7+row*3)%5];ctx.globalAlpha=.28+((i*3+row)%5)*.09;ctx.beginPath();ctx.arc(x+5,y+5,3+(i%3===0?1:0),0,Math.PI*2);ctx.fill();ctx.fillRect(x+2,y+9,7,10)}ctx.globalAlpha=1}
+ // arena signage
+ rr(413,114,170,28,5,'#17231b','#435344');ctx.fillStyle='#d3f36b';ctx.font='800 11px "DM Sans"';ctx.textAlign='center';ctx.fillText('HOME OF THE HUSTLE',498,132);
+ // court plane
+ const floor=ctx.createLinearGradient(0,290,0,H);floor.addColorStop(0,'#6d6847');floor.addColorStop(.24,'#c38d51');floor.addColorStop(1,'#a96f3d');ctx.fillStyle=floor;ctx.beginPath();ctx.moveTo(0,288);ctx.lineTo(W,288);ctx.lineTo(W,H);ctx.lineTo(0,H);ctx.closePath();ctx.fill();
+ // board seams perspective
+ ctx.globalAlpha=.16;ctx.strokeStyle='#ffe0a2';ctx.lineWidth=2;for(let i=0;i<=12;i++){let x=i*95;ctx.beginPath();ctx.moveTo(x,289);ctx.lineTo(x+(x-500)*.15,H);ctx.stroke()}for(let y=333;y<560;y+=44){ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(W,y);ctx.stroke()}ctx.globalAlpha=1;
+ // key, arc, baseline & center lines
+ ctx.strokeStyle='#f2d5a5';ctx.globalAlpha=.67;ctx.lineWidth=3;ctx.strokeRect(HOOP.x-225,288,225,212);ctx.beginPath();ctx.arc(HOOP.x-225,394,106,-Math.PI/2,Math.PI/2);ctx.stroke();ctx.beginPath();ctx.arc(HOOP.x,394,365,Math.PI*.53,Math.PI*1.47);ctx.stroke();ctx.beginPath();ctx.moveTo(0,500);ctx.lineTo(W,500);ctx.stroke();ctx.globalAlpha=1;
+ // shooting spot marker
+ ctx.fillStyle='#e2f57a';ctx.globalAlpha=.6;ctx.beginPath();ctx.arc(state.launchX,499,4,0,Math.PI*2);ctx.fill();ctx.globalAlpha=1;
+ // floor gleam
+ const glow=ctx.createRadialGradient(HOOP.x,425,5,HOOP.x,425,210);glow.addColorStop(0,'#f3d18922');glow.addColorStop(1,'#f3d18900');ctx.fillStyle=glow;ctx.fillRect(500,270,500,290);
+}
+function drawHoop(){
+ // backboard pole & board
+ ctx.fillStyle='#303c35';ctx.fillRect(879,179,12,322);ctx.fillStyle='#9ca99e';ctx.fillRect(873,144,6,365);rr(824,148,74,62,4,'#e2e8dd','#f5f5e9');ctx.fillStyle='#b8c2b5';ctx.fillRect(832,156,58,46);ctx.strokeStyle='#d55b38';ctx.lineWidth=3;ctx.strokeRect(846,174,28,22);
+ // rim
+ ctx.strokeStyle='#ec6944';ctx.lineWidth=7;ctx.beginPath();ctx.ellipse(HOOP.x+15,HOOP.y,30,7,0,0,Math.PI*2);ctx.stroke();ctx.fillStyle='#e9724a';ctx.fillRect(HOOP.x-18,HOOP.y-3,36,6);
+ // net
+ ctx.strokeStyle='#e7e5d5';ctx.lineWidth=1.4;ctx.globalAlpha=.72;ctx.beginPath();ctx.moveTo(HOOP.x-17,HOOP.y+5);ctx.lineTo(HOOP.x-10,HOOP.y+44);ctx.lineTo(HOOP.x+9,HOOP.y+44);ctx.lineTo(HOOP.x+18,HOOP.y+5);ctx.stroke();for(let i=0;i<5;i++){const x=HOOP.x-14+i*7;ctx.beginPath();ctx.moveTo(x,HOOP.y+7);ctx.lineTo(HOOP.x-8+i*4,HOOP.y+43);ctx.stroke()}for(let j=1;j<=3;j++){const y=HOOP.y+10+j*8;ctx.beginPath();ctx.moveTo(HOOP.x-16+j*1.5,y);ctx.lineTo(HOOP.x+16-j*1.5,y);ctx.stroke()}ctx.globalAlpha=1;
+}
+function drawPlayer(){
+ const x=state.launchX-47,y=FLOOR;
+ // shadow
+ ctx.fillStyle='#33271e66';ctx.beginPath();ctx.ellipse(x+7,y-1,36,8,0,0,Math.PI*2);ctx.fill();
+ // legs / shoes
+ ctx.fillStyle='#292d29';ctx.beginPath();ctx.moveTo(x-15,y-49);ctx.lineTo(x-1,y-46);ctx.lineTo(x-5,y-7);ctx.lineTo(x-18,y-5);ctx.fill();ctx.beginPath();ctx.moveTo(x+2,y-46);ctx.lineTo(x+16,y-48);ctx.lineTo(x+21,y-7);ctx.lineTo(x+8,y-6);ctx.fill();rr(x-23,y-9,24,8,4,'#e7e7db');rr(x+6,y-9,22,8,4,'#e7e7db');
+ // jersey torso
+ ctx.fillStyle='#e7653c';ctx.beginPath();ctx.moveTo(x-19,y-105);ctx.quadraticCurveTo(x,y-116,x+20,y-104);ctx.lineTo(x+17,y-47);ctx.quadraticCurveTo(x,y-41,x-17,y-48);ctx.closePath();ctx.fill();ctx.fillStyle='#f7e7c1';ctx.fillRect(x-19,y-59,36,5);ctx.fillStyle='#ffe9cb';ctx.font='800 18px "Barlow Condensed"';ctx.textAlign='center';ctx.fillText('7',x,y-73);
+ // arms holding pose
+ ctx.strokeStyle='#c68157';ctx.lineWidth=11;ctx.lineCap='round';ctx.beginPath();ctx.moveTo(x-15,y-96);ctx.lineTo(x-30,y-79);ctx.lineTo(state.launchX-6,state.launchY+2);ctx.stroke();ctx.beginPath();ctx.moveTo(x+14,y-97);ctx.lineTo(x+29,y-79);ctx.lineTo(state.launchX+5,state.launchY+1);ctx.stroke();
+ // neck / head
+ ctx.fillStyle='#be8059';ctx.fillRect(x-6,y-116,13,13);ctx.fillStyle='#bd7954';ctx.beginPath();ctx.arc(x,y-130,17,0,Math.PI*2);ctx.fill();ctx.fillStyle='#20251f';ctx.beginPath();ctx.arc(x,y-137,17,Math.PI,Math.PI*2);ctx.lineTo(x+15,y-128);ctx.quadraticCurveTo(x,y-135,x-16,y-128);ctx.fill();ctx.fillStyle='#f5d0ae';ctx.beginPath();ctx.arc(x+6,y-131,1.3,0,Math.PI*2);ctx.fill();ctx.lineCap='butt';
+}
+function ballArt(x,y,r,rotation=0,skin=currentSkin()){
+ ctx.save();ctx.translate(x,y);ctx.rotate(rotation);ctx.shadowColor='#29180e88';ctx.shadowBlur=6;ctx.shadowOffsetY=3;
+ const g=ctx.createRadialGradient(-r*.34,-r*.4,1,r*.14,r*.15,r*1.25);g.addColorStop(0,'#ffb25d');g.addColorStop(.4,skin.color);g.addColorStop(1,'#a84120');ctx.fillStyle=g;ctx.beginPath();ctx.arc(0,0,r,0,Math.PI*2);ctx.fill();ctx.shadowColor='transparent';ctx.strokeStyle='#35251d';ctx.lineWidth=Math.max(1.3,r*.105);ctx.beginPath();ctx.arc(0,0,r*.98,-Math.PI/2,Math.PI/2);ctx.moveTo(-r*.96,0);ctx.quadraticCurveTo(0,-r*.38,r*.96,0);ctx.moveTo(-r*.82,-r*.55);ctx.quadraticCurveTo(-r*.08,0,-r*.82,r*.55);ctx.moveTo(r*.82,-r*.55);ctx.quadraticCurveTo(r*.08,0,r*.82,r*.55);ctx.stroke();ctx.restore();
+}
+function aimParams(){if(!state.aim)return null;const dx=state.aim.x-state.launchX,dy=state.aim.y-state.launchY;let a=Math.atan2(-dy,dx);a=Math.max(.38,Math.min(1.33,a));const len=Math.hypot(dx,dy),speed=Math.max(8.7,Math.min(15,8.7+Math.max(0,len-25)*.038));return{a,speed,vx:speed*Math.cos(a),vy:-speed*Math.sin(a)}}
+function drawAim(){
+ if(!state.aim||state.balls.length||state.roundDone)return;const p=aimParams();if(!p)return;
+ ctx.save();ctx.setLineDash([3,8]);ctx.strokeStyle='#dcf485';ctx.lineWidth=2;ctx.globalAlpha=.6;ctx.beginPath();ctx.moveTo(state.launchX,state.launchY);let x=state.launchX,y=state.launchY;for(let i=0;i<78;i++){x+=p.vx;y+=p.vy;p.vy+=GRAVITY;if(y>FLOOR)break;ctx.lineTo(x,y)}ctx.stroke();ctx.setLineDash([]);ctx.globalAlpha=1;
+ // endpoint reticle
+ ctx.strokeStyle='#d9f27b';ctx.lineWidth=2;ctx.beginPath();ctx.arc(state.aim.x,state.aim.y,8,0,Math.PI*2);ctx.moveTo(state.aim.x-12,state.aim.y);ctx.lineTo(state.aim.x-5,state.aim.y);ctx.moveTo(state.aim.x+5,state.aim.y);ctx.lineTo(state.aim.x+12,state.aim.y);ctx.stroke();
+ // power meter
+ const power=Math.round(p.speed/15*100);ctx.fillStyle='#192018cc';rr(26,27,118,36,9,'#172019cc','#56654a');ctx.fillStyle='#d2f36b';ctx.font='800 10px "DM Sans"';ctx.textAlign='left';ctx.fillText('POWER',38,42);ctx.fillStyle='#526047';ctx.fillRect(38,49,89,5);ctx.fillStyle='#d2f36b';ctx.fillRect(38,49,89*power/100,5);ctx.restore();
+}
+function drawBall(b){ballArt(b.x,b.y,14,b.rot,b.skin)}
+function drawParticles(){for(const p of state.particles){ctx.globalAlpha=Math.max(0,p.life/p.max);ctx.fillStyle=p.color;ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,Math.PI*2);ctx.fill()}ctx.globalAlpha=1}
+function drawOverlay(){if(!state.roundDone)return;ctx.fillStyle='#101710c9';ctx.fillRect(0,0,W,H);const win=state.roundWon;rr(310,161,380,225,19,'#1b241a','#71834d');ctx.textAlign='center';ctx.fillStyle=win?'#d2f36b':'#ff9369';ctx.font='900 48px "Barlow Condensed"';ctx.fillText(win?'ROUND CLEARED':'KEEP SHOOTING',500,225);ctx.fillStyle='#f4f3e8';ctx.font='700 18px "DM Sans"';ctx.fillText(win?`${state.makes} baskets · +25 coins`:`${state.makes} baskets · 3 needed`,500,263);ctx.fillStyle='#b3bba9';ctx.font='500 12px "DM Sans"';ctx.fillText(win?'You earned XP and are ready for the next round.':'Your career is just getting started. Run it back!',500,288);rr(399,315,202,48,12,win?'#d2f36b':'#ff8148');ctx.fillStyle='#1b2415';ctx.font='900 15px "DM Sans"';ctx.fillText(win?'NEXT ROUND →':'RETRY ROUND ↻',500,345)}
+function render(){ctx.clearRect(0,0,W,H);drawCourt();drawHoop();drawPlayer();drawAim();for(const b of state.balls)drawBall(b);drawParticles();drawOverlay()}
+function burst(x,y,color,n=18){for(let i=0;i<n;i++){const a=Math.random()*Math.PI*2,s=1+Math.random()*4;state.particles.push({x,y,vx:Math.cos(a)*s,vy:Math.sin(a)*s-2,life:35+Math.random()*20,max:55,r:2+Math.random()*3,color})}}
+function recordMake(b){if(b.scored)return;b.scored=true;state.results[b.index]=true;state.makes++;state.totalMakes++;state.streak++;state.bestStreak=Math.max(state.streak,state.bestStreak);const points=22+Math.min(18,state.streak*4);state.xp+=points;state.coins+=3+Math.min(7,state.streak);state.totalShots++;const oldLevel=level();state.skin=Math.min(skins.length-1,Math.max(state.skin,skins.findIndex(s=>s.at>level())-1));if(state.skin<0)state.skin=0;burst(HOOP.x,HOOP.y,'#eaf6a1',24);beep(680,.12);setTimeout(()=>beep(910,.16),100);showToast(state.streak>=3?`🔥 ${state.streak} IN A ROW! +${points} XP`:`BUCKET! +${points} XP`);if(level()>oldLevel)showToast(`LEVEL UP! ${titles[Math.min(level()-1,titles.length-1)]}`);updateUI()}
+function recordMiss(b){if(b.resolved)return;b.resolved=true;state.results[b.index]=false;state.streak=0;state.totalShots++;beep(155,.18,'triangle');updateUI()}
+function finishRound(){if(state.roundDone)return;state.roundDone=true;state.roundWon=state.makes>=3;if(state.roundWon){state.coins+=25;state.xp+=35;state.skin=Math.max(state.skin,Math.min(skins.length-1,skins.findLastIndex?skins.findLastIndex(s=>level()>=s.at):0));showToast('ROUND WON! +25 coins · +35 XP');beep(740,.2);setTimeout(()=>beep(990,.25),160)}else showToast('Need 3 makes to advance. Try again!');save();updateUI()}
+function advanceRound(){if(!state.roundDone)return;const won=state.roundWon;if(won){state.career++;state.round++}roundReset();showToast(won?'New round — keep the streak alive!':'You got this. Take your time on the arc.');save()}
+function launch(params){if(state.balls.length||state.roundDone||state.attempts>=5)return;const b={x:state.launchX,y:state.launchY,vx:params.vx,vy:params.vy,rot:0,skin:{...currentSkin()},index:state.attempts,frames:0,scored:false,resolved:false,remove:false,bounces:0};state.attempts++;state.balls.push(b);state.aim=null;beep(260,.07,'triangle');updateUI()}
+function defaultParams(){const a=.875,speed=13.1;return{a,speed,vx:speed*Math.cos(a),vy:-speed*Math.sin(a)}}
+function frame(t){const dt=Math.min(2,(t-lastFrame)/16.67||1);lastFrame=t;
+ for(const b of state.balls){if(b.remove)continue;b.frames+=dt;b.x+=b.vx*dt;b.y+=b.vy*dt;b.vy+=GRAVITY*dt;b.vx*=Math.pow(.999,dt);b.rot+=b.vx*.012*dt;
+  if(!b.scored&&!b.resolved&&b.x>=HOOP.x-3&&b.x-b.vx*dt<HOOP.x-3){const ratio=(HOOP.x-3-(b.x-b.vx*dt))/Math.max(.01,b.vx*dt),cy=b.y-b.vy*dt*ratio;if(cy>HOOP.y-22&&cy<HOOP.y+23)recordMake(b);else if(cy>HOOP.y+23&&b.vy>0)recordMiss(b)}
+  if(!b.scored&&b.x>824&&b.x<900&&b.y>144&&b.y<211&&b.vx>0){b.x=824;b.vx=-Math.abs(b.vx)*.58;b.vy*=.65}
+  if(b.y>FLOOR-14&&!b.scored){if(!b.resolved)recordMiss(b);b.y=FLOOR-14;if(b.bounces<1){b.vy=-Math.abs(b.vy)*.38;b.vx*=.58;b.bounces++}else b.remove=true}
+  if(b.scored&&b.frames>37)b.remove=true;if(b.x>1020||b.frames>190)b.remove=true;
+ }
+ state.balls=state.balls.filter(b=>!b.remove);for(const p of state.particles){p.x+=p.vx*dt;p.y+=p.vy*dt;p.vy+=.12*dt;p.life-=dt}state.particles=state.particles.filter(p=>p.life>0);
+ if(state.attempts>=5&&state.balls.length===0&&!state.roundDone)finishRound();render();requestAnimationFrame(frame)
+}
+function point(e){const r=canvas.getBoundingClientRect();return{x:(e.clientX-r.left)/r.width*W,y:(e.clientY-r.top)/r.height*H}}
+let pointerDown=false;
+canvas.addEventListener('pointerdown',e=>{e.preventDefault();const p=point(e);if(state.roundDone){if(p.x>380&&p.x<620&&p.y>300&&p.y<380)advanceRound();return}if(state.balls.length||state.attempts>=5)return;const d=Math.hypot(p.x-state.launchX,p.y-state.launchY);if(d<62){pointerDown=true;state.aim={x:state.launchX+105,y:state.launchY-125};canvas.setPointerCapture(e.pointerId);render()}});
+canvas.addEventListener('pointermove',e=>{if(pointerDown){e.preventDefault();const p=point(e);state.aim={x:p.x,y:p.y};render()}});
+canvas.addEventListener('pointerup',e=>{if(!pointerDown)return;e.preventDefault();pointerDown=false;const p=state.aim?aimParams():null;if(p&&p.speed>8.7)launch(p);else state.aim=null});
+canvas.addEventListener('pointercancel',()=>{pointerDown=false;state.aim=null});
+window.addEventListener('keydown',e=>{if(['ArrowLeft','ArrowRight',' ','Enter'].includes(e.key))e.preventDefault();if(state.roundDone&&(e.key===' '||e.key==='Enter')){advanceRound();return}if(e.key===' '){if(!state.balls.length)launch(state.aim?aimParams():defaultParams());return}if(e.key==='ArrowLeft'||e.key==='ArrowRight'){if(state.balls.length||state.roundDone)return;if(!state.aim)state.aim={x:state.launchX+100,y:state.launchY-130};let p=aimParams(),a=p.a+(e.key==='ArrowRight'?.035:-.035);a=Math.max(.38,Math.min(1.33,a));state.aim={x:state.launchX+Math.cos(a)*140,y:state.launchY-Math.sin(a)*140};render()}});
+$('advanceBtn').addEventListener('click',advanceRound);
+$('soundBtn').addEventListener('click',()=>{state.muted=!state.muted;$('soundBtn').textContent=state.muted?'◖×)':'◖))';if(!state.muted)beep(560,.08)});
+$('howBtn').addEventListener('click',()=>$('modal').classList.add('open'));$('modalClose').addEventListener('click',()=>$('modal').classList.remove('open'));$('modal').addEventListener('click',e=>{if(e.target===$('modal'))$('modal').classList.remove('open')});
+$('resetBtn').addEventListener('click',()=>{if(confirm('Start a new career? Your current career progress will be erased.')){localStorage.removeItem('fullCourtSave');Object.assign(state,{career:1,xp:0,coins:0,totalMakes:0,totalShots:0,bestStreak:0,streak:0,skin:0,round:1});roundReset();showToast('A fresh career begins!')}});
+function syncAdvance(){const b=$('advanceBtn');b.style.display=state.roundDone?'block':'none';b.textContent=state.roundWon?'NEXT ROUND →':'RETRY ROUND ↻'}
+const originalUpdateUI=updateUI; // refresh the round action after each state change
+updateUI=function(){originalUpdateUI();syncAdvance()};
+updateUI();spawn();requestAnimationFrame(frame);
+})();
+</script>
+</body>
+</html>
